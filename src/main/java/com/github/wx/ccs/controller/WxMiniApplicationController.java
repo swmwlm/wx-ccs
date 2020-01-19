@@ -5,7 +5,6 @@ import com.github.wx.ccs.constant.Api;
 import com.github.wx.ccs.entity.ServerResponse;
 
 import com.github.wx.ccs.enums.ErrorMessage;
-import com.github.wx.ccs.exception.ServiceException;
 import com.github.wx.ccs.service.WxMiniService;
 import com.github.wx.ccs.utils.*;
 import org.slf4j.Logger;
@@ -16,9 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
-import java.net.URLEncoder;
 import java.security.InvalidAlgorithmParameterException;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 

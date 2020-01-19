@@ -8,12 +8,12 @@
         <version>2.2.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.github.wx_access_token</groupId>
-    <artifactId>wx_access_token</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>wx_access_token</name>
+    <groupId>com.github.wx</groupId>
+    <artifactId>ccs</artifactId>
+    <version>1.0</version>
+    <name>ccs</name>
     <packaging>war</packaging>
-    <description>Demo project for Spring Boot</description>
+    <description>A wecaht center control server project for spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -126,6 +126,7 @@
     </profiles>
 
     <build>
+        <finalName>wx</finalName>
         <plugins>
             <plugin>
                 <groupId>org.asciidoctor</groupId>

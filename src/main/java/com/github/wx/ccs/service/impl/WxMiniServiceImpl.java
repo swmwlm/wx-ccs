@@ -30,22 +30,25 @@ public class WxMiniServiceImpl implements WxMiniService {
     @Autowired
     RedisUtil redisUtil;
 
+    @Autowired
+    ParamConfig paramConfig;
+
     @Override
     public void setSessionKey(String appId, String token, String sessionKey) {
         String key = appId + "_" + Prefix.MINI_SESSION_KEY + token;
-        redisUtil.setex(key, sessionKey, 3 * 24 * 60 * 60 * 1000l);
+        redisUtil.setex(key, sessionKey, paramConfig.getMiniProgramSessionKeyExpireTime());
     }
 
     @Override
     public void setOpenId(String appId, String token, String openId) {
         String key = appId + "_" + Prefix.MINI_OPEN_ID + token;
-        redisUtil.setex(key, openId, 3 * 24 * 60 * 60 * 1000l);
+        redisUtil.setex(key, openId, paramConfig.getMiniProgramSessionKeyExpireTime());
     }
 
     @Override
     public void setUnionId(String appId, String token, String unionId) {
         String key = appId + "_" + Prefix.MINI_UNION_ID + token;
-        redisUtil.setex(key, unionId, 3 * 24 * 60 * 60 * 1000l);
+        redisUtil.setex(key, unionId, paramConfig.getMiniProgramSessionKeyExpireTime());
     }
 
     @Override

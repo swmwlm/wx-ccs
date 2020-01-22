@@ -8,11 +8,6 @@ import java.io.Serializable;
 import java.security.InvalidParameterException;
 import java.util.HashMap;
 
-/**
- * 服务端返回对象
- * @param <T>
- * @author  yangyu
- */
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 @SuppressWarnings({"unused"})
 public class ServerResponse<T> implements Serializable {

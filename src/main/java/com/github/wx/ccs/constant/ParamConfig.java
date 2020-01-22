@@ -15,6 +15,9 @@ public class ParamConfig {
     @Value("${spring.user.defined.http.proxy.port}")
     private Integer proxyPort;
 
+    @Value("${spring.user.defined.mini.session.expired}")
+    private Long miniProgramSessionKeyExpireTime;
+
 
     public String getProxyHost() {
         return proxyHost;
@@ -32,4 +35,11 @@ public class ParamConfig {
         this.proxyPort = proxyPort;
     }
 
+    public Long getMiniProgramSessionKeyExpireTime() {
+        return miniProgramSessionKeyExpireTime;
+    }
+
+    public void setMiniProgramSessionKeyExpireTime(Long miniProgramSessionKeyExpireTime) {
+        this.miniProgramSessionKeyExpireTime = miniProgramSessionKeyExpireTime;
+    }
 }

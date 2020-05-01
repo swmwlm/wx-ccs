@@ -12,6 +12,7 @@ public enum  ErrorMessage {
     WITHOUT_ACCESS_TOKEN(1005, "without parameter: access token"),
     WITHOUT_SCENE(1006, "without parameter: scene"),
     GET_MINI_QRCODE_FAILED(1007, "get qrcode failed"),
+    WITHOUT_APP_ID(1008, "without parameter: appId"),
     INVALID_CODE(40029, "invalid parameter: code"),
     INVALID_APP_ID(40013, "invalid parameter: appId"),
     INVALID_APP_SECRET(40125, "invalid parameter: secret");

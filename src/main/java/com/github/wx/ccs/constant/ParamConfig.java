@@ -18,6 +18,8 @@ public class ParamConfig {
     @Value("${spring.user.defined.mini.session.expired}")
     private Long miniProgramSessionKeyExpireTime;
 
+    @Value("${spring.user.defined.session.expired}")
+    private Long expireTime;
 
     public String getProxyHost() {
         return proxyHost;
@@ -42,4 +44,13 @@ public class ParamConfig {
     public void setMiniProgramSessionKeyExpireTime(Long miniProgramSessionKeyExpireTime) {
         this.miniProgramSessionKeyExpireTime = miniProgramSessionKeyExpireTime;
     }
+
+    public Long getExpireTime() {
+        return expireTime;
+    }
+
+    public void setExpireTime(Long expireTime) {
+        this.expireTime = expireTime;
+    }
+
 }

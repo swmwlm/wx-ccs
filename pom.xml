@@ -12,11 +12,12 @@
     <artifactId>ccs</artifactId>
     <version>1.0</version>
     <name>ccs</name>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <description>A wecaht center control server project for spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
+        <spring-restdocs.version>1.2.4.RELEASE</spring-restdocs.version>
     </properties>
 
     <dependencies>
